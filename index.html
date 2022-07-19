@@ -15,9 +15,15 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-   
+    <a-assets>
+        <a-asset-item id="avila" src="Asset1.obj"></a-asset-item>
+      </a-assets>
+    
+      <!-- Using the asset management system. -->
+      <a-obj-model src="#avila"></a-obj-model>
+    
     <a-entity geometry="primitive: box" material="color: red"
-   
+        look-at="[gps-camera]"
 
         gps-entity-place="latitude: 35.293132; longitude: -120.642852;"
     ></a-entity>
