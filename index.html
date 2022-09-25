@@ -22,13 +22,20 @@
    -->
     </a-assets>
   
-    <a-entity obj-model="obj: #avila"></a-entity>
+    <a-entity 
+    obj-model="obj: #avila"
+    look-at="[gps-camera]"
+        position="0 0 -100"
+        scale="50 50 50"
+        gps-entity-place="latitude: 35.178603; longitude: -120.732660;"
+    
+    ></a-entity>
  
-
+<!--
     <a-assets>
       <a-asset-item id="avila" src="/aframe_location/Avila.obj"></a-asset-item>
     </a-assets>
-    <!--
+    
     <a-entity 
       gltf-model="#avila" 
       look-at="[gps-camera]"
@@ -41,7 +48,7 @@
       <a-text
         value="AVILA"
         look-at="[gps-camera]"
-        position="0 0 -40"
+        position="0 0 -100"
         scale="50 50 50"
         gps-entity-place="latitude: 35.178603; longitude: -120.732660;"
       ></a-text>
